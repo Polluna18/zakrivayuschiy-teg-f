@@ -16,7 +16,7 @@
   max-inline-size: 1440px;
   max-block-size: 960px;
   font-family: var(--Inter-Variable), sans-serif;
-  font-weight: var(--Inter-Variable-regular);
+  font-variation-settings: "wght" var(--Inter-Variable-regular);
   background-image: repeating-linear-gradient(#d3d3d3, transparent 2px),
   repeating-linear-gradient(90deg, #d3d3d3, transparent 2px),
   linear-gradient(180deg, #e7e7e7, #1a1a1a);
@@ -116,6 +116,14 @@ div {
   text-transform: var(--txt-transform);
   font-family: var(--PressStart2P-Regular), sans-serif;
 }
+
+@supports ((text-stroke: 1px var(--bcg-color)) or (-webkit-text-stroke: 1px var(--bcg-color))) {
+  .label {
+    -webkit-text-stroke: 1px var(--bcg-color);
+  }
+
+}
+
 
 .card-text {
   display: grid;

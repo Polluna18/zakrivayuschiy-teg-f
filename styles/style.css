@@ -14,7 +14,6 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   max-inline-size: 1440px;
-  max-block-size: 960px;
   font-family: var(--Inter-Variable), sans-serif;
   font-variation-settings: "wght" var(--Inter-Variable-regular);
   background-image: repeating-linear-gradient(#d3d3d3, transparent 2px),
@@ -58,7 +57,7 @@
 
 .card-name {
   font-size: var(--main-font-size);
-  font-weight: 700;
+  font-variation-settings: "wght" var(--Inter-Variable-bold);
   padding-inline: 10px;
   padding-block: 6px;
   line-height: 22px;
@@ -198,6 +197,17 @@ div {
 
 .button:hover::before {
   transform: scaleX(1);
+}
+
+.discet {
+  color: #fff;
+  block-size: 21px;
+  mix-blend-mode: difference;
+}
+
+.dialog-discet {
+  color: #fff;
+  mix-blend-mode: difference;
 }
 
 .memory-button {

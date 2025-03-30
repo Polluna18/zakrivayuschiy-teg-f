@@ -42,11 +42,6 @@ ol {
   list-style: none;
 }
 
-dialog {
-  padding: 0;
-  margin: auto;
-}
-
 button {
   background-color: transparent;
   margin: 0;

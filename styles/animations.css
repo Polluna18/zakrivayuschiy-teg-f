@@ -82,6 +82,7 @@
 
 .like-icon.is-liked .heart {
   animation: scale 0.3s 0.1s ease-in;
+  transform-origin: center;
 }
 
 .like-icon.is-liked .sparks {

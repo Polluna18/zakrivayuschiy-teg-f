@@ -229,11 +229,19 @@ div {
   border: var(--border);
 }
 
+.modal-window {
+  inline-size: clamp(21.313rem, 1.127vw + 21.048rem, 22.063rem);
+  block-size: clamp(11.938rem, 0vw + 11.938rem, 11.938rem);
+  padding: 30px;
+}
+
 .dialog {
   display: flex;
   align-items: center;
-  justify-content: center;
-  block-size: clamp(7.688rem, 0vw + 7.688rem, 7.688rem);
+  justify-content: start;
+  /*margin: 30px;*/
+  inline-size: clamp(16.063rem, 3.38vw + 15.27rem, 18.313rem);
+  block-size: clamp(3.938rem, 0vw + 3.938rem, 3.938rem);
   gap: 20px;
 }
 
@@ -254,11 +262,11 @@ dialog::backdrop {
   border: var(--border);
   inline-size: clamp(16.063rem, 3.38vw + 15.27rem, 18.313rem);
   height: 38px;
-  margin: 0 30px 30px 30px;
+  margin-block-start: 30px;
   padding: 0;
 }
 
-@media (width <= 376px) {
+@media (width <= 375px) {
   .header {
     margin: 100px 0;
   }
@@ -281,6 +289,10 @@ dialog::backdrop {
 
   .memory-button {
     flex-direction: column;
+  }
+
+  .modal-window {
+    padding: 30px 37px;
   }
 
   .discet {

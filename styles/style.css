@@ -217,6 +217,7 @@ div {
 .dialog-discet {
   color: #fff;
   mix-blend-mode: difference;
+  align-self: center;
 }
 
 .memory-button {
@@ -230,8 +231,6 @@ div {
 }
 
 .modal-window {
-  inline-size: clamp(21.313rem, 1.127vw + 21.048rem, 22.063rem);
-  block-size: clamp(11.938rem, 0vw + 11.938rem, 11.938rem);
   padding: 30px;
 }
 
@@ -239,7 +238,6 @@ div {
   display: flex;
   align-items: center;
   justify-content: start;
-  /*margin: 30px;*/
   inline-size: clamp(16.063rem, 3.38vw + 15.27rem, 18.313rem);
   block-size: clamp(3.938rem, 0vw + 3.938rem, 3.938rem);
   gap: 20px;
@@ -292,7 +290,7 @@ dialog::backdrop {
   }
 
   .modal-window {
-    padding: 30px 37px;
+    padding: 30px 38px;
   }
 
   .discet {
